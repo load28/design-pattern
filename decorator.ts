@@ -3,7 +3,7 @@ import { log } from "./utils";
 /**
  * 기능을 나타내는 최상위 추상 클래스
  */
-abstract class Post {
+class Post {
   public title: string = "New Post";
 
   public hasPermission(): boolean {
