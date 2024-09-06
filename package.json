@@ -1,0 +1,11 @@
+{
+  "name": "design-pattern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/load28/design-pattern.git",
+  "author": "load28 <tjalsdud89@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^3.3.3"
+  }
+}
