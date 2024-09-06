@@ -43,7 +43,7 @@ class Enable extends PostDecorator {
   }
 
   public hasPermission(): boolean {
-    return true;
+    return !!this.post.title;
   }
 }
 
