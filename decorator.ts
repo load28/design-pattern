@@ -3,12 +3,11 @@ import { log } from "./utils";
 /**
  * 기능을 나타내는 최상위 추상 클래스
  */
-class Post {
+abstract class Post {
   public title: string = "New Post";
 
-  public hasPermission(): boolean {
-    return false;
-  }
+  // 데코레이터를 사용하면 반드시 명시해야하는 함수
+  abstract hasPermission(): boolean;
 }
 
 /**
@@ -22,15 +21,16 @@ abstract class PostDecorator extends Post {
     super();
     this.post = post;
   }
-
-  // 데코레이터를 사용하면 반드시 명시해야하는 함수
-  abstract hasPermission(): boolean;
 }
 
 class DefaultPost extends Post {
   constructor() {
     super();
     this.title = "DefaultPost";
+  }
+
+  hasPermission(): boolean {
+    return false;
   }
 }
 
