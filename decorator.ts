@@ -64,5 +64,5 @@ const invalid = new ExpiringPermissionValidator(invalidPost);
 
 log('enable post: ', enable.title);
 log('enable post: ', enable.hasPermission());
-log('invalidPost: ', invalid.title);
-log('invalidPost: ', invalid.hasPermission());
+log('invalid Post: ', invalid.title);
+log('invalid Post: ', invalid.hasPermission());
